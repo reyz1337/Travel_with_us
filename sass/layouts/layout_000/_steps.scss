@@ -1,0 +1,45 @@
+.steps{
+    .container{
+        padding: 60px 0;
+        background-color: $dark-grey;
+        .steps-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           &_item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .icon{
+                width: 64px;
+                height: 64px;
+                margin-bottom: 20px;
+            }
+            .search{
+                fill: $accent;
+            }
+            .circle{
+                fill: $red;
+            }
+            .thumbs{
+                fill: $blue;
+            }
+            &-title{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 40px;
+                text-align: center;
+                text-transform: capitalize;
+                font-family: $aleoFont;
+                color: $white;
+            }
+           }
+           &_item:not(:last-child){
+            margin-bottom: 60px;
+           }
+        }
+    }
+}

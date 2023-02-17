@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header .hero {
+  padding-top: 295px;
+  background-image: url("../img/HeaderBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.header .hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .hero .container .hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+.header .hero .container .hero-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header .hero .container .search {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+.header .hero .container .search .search-text {
+  height: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  padding: 17px 10px;
+  border: 3px solid #fff;
+  width: 100%;
+  color: #999999;
+}
+.header .hero .container .search .search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 60px;
+  padding: 0 10px;
+  border: 4px solid #fff;
+  background: #5373FD;
+  text-align: center;
+  color: #eeeeee;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.4s;
+}
+.header .hero .container .search .search-button .icon {
+  width: 44px;
+  height: 16px;
+  fill: #fff;
+}
+.header .hero .container .search .search-button .button-text {
+  display: none;
+}
+.header .hero .container .scroll {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header .hero .container .scroll .scroll-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+.header .hero .container .scroll .icon {
+  width: 14px;
+  height: 16px;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  animation: bounce 0.3s infinite alternate;
+}
+
+.navigation {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5373FD;
+  z-index: 2;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.navigation .container {
+  min-height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .container .nav-logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 0px 3px;
+  z-index: 2;
+}
+.menu-button_item {
+  height: 2px;
+  width: 40px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.01s ease 0.15s;
+}
+.menu-button_item::before {
+  content: "";
+  height: 2px;
+  width: 40px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: -11px;
+  transition: transform 0.15s ease, top 0.15s ease 0.16s;
+}
+.menu-button_item::after {
+  content: "";
+  height: 2px;
+  width: 40px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  transition: transform 0.15s ease, bottom 0.15s ease 0.16s;
+}
+
+.menu {
+  z-index: 1;
+  position: absolute;
+  padding: 100px 0 32px 0;
+  min-height: 300px;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #5373FD;
+  transition: left 0.3s ease 0s;
+}
+.menu .main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .main-menu_item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.menu .main-menu_item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Aleo", serif;
+  color: #fff;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+.header_active .menu {
+  left: 0;
+}
+.header_active .menu-button_item {
+  background-color: transparent;
+  transition: all 0.01s ease 0.15s;
+}
+.header_active .menu-button_item::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 0.15s ease, transform 0.15s ease 0.16s;
+}
+.header_active .menu-button_item::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 0.15s ease, transform 0.15s ease 0.16s;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.why {
+  background-image: url("../img/WhyBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+.why .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why .container .images {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.why .container .images img {
+  width: 258px;
+  height: 162px;
+}
+.why .container .images img:first-of-type {
+  margin-bottom: 25px;
+}
+.why .container .description .why-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Aleo", serif;
+  color: #fff;
+  margin-bottom: 19px;
+}
+.why .container .description .why-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+.why .container .description .why-text:first-of-type {
+  margin-bottom: 35px;
+}
+.why .container .description .why-text:last-of-type {
+  margin-bottom: 25px;
+}
+.why .container .description .why-button {
+  position: relative;
+  z-index: 1;
+  width: 213px;
+  min-height: 60px;
+  background-color: #5373FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  transition: background-color 0.4s;
+  margin: 0 auto;
+}
+.why .container .description .why-button span {
+  color: #fff;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.why .container .description .why-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 52px;
+  border-bottom: 60px solid #486BFE;
+  border-right: 57px solid transparent;
+  z-index: 2;
+}
+
+.steps .container {
+  padding: 60px 0;
+  background-color: #333333;
+}
+.steps .container .steps-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.steps .container .steps-list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.steps .container .steps-list_item .icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+.steps .container .steps-list_item .search {
+  fill: #5373FD;
+}
+.steps .container .steps-list_item .circle {
+  fill: #FF6363;
+}
+.steps .container .steps-list_item .thumbs {
+  fill: #00A2FF;
+}
+.steps .container .steps-list_item-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Aleo", serif;
+  color: #fff;
+}
+.steps .container .steps-list_item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.booknow-one {
+  background: url("../img/booknowFirst.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+}
+.booknow-one .container .booknow-card {
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+  color: #fff;
+}
+.booknow-one .container .booknow-card .city {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 16px;
+}
+.booknow-one .container .booknow-card_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 16px;
+}
+.booknow-one .container .booknow-card_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 28px;
+}
+.booknow-one .container .booknow-card_button {
+  position: relative;
+  z-index: 1;
+  width: 213px;
+  min-height: 60px;
+  background-color: #5373FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  transition: background-color 0.4s;
+}
+.booknow-one .container .booknow-card_button span {
+  color: #fff;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.booknow-one .container .booknow-card_button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 52px;
+  border-bottom: 60px solid #486BFE;
+  border-right: 57px solid transparent;
+  z-index: 2;
+}
+
+.booknow-two {
+  background: url("../img/booknowSecond.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+}
+.booknow-two .container .booknow-card {
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+  color: #fff;
+}
+.booknow-two .container .booknow-card .city {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 16px;
+}
+.booknow-two .container .booknow-card_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 16px;
+}
+.booknow-two .container .booknow-card_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 28px;
+}
+.booknow-two .container .booknow-card_button {
+  position: relative;
+  z-index: 1;
+  width: 213px;
+  min-height: 60px;
+  background-color: #5373FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  transition: background-color 0.4s;
+}
+.booknow-two .container .booknow-card_button span {
+  color: #fff;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.booknow-two .container .booknow-card_button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 52px;
+  border-bottom: 60px solid #486BFE;
+  border-right: 57px solid transparent;
+  z-index: 2;
+}
+
+.tourists {
+  background: url("../img/touristBg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0 120px 0;
+}
+.tourists .container .tourists-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Aleo", serif;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.tourists .container .tourists-card {
+  background: #333333;
+}
+.tourists .container .tourists-card img {
+  width: 100%;
+}
+.tourists .container .tourists-card .tourists-main {
+  padding: 48px 60px;
+}
+.tourists .container .tourists-card .tourists-main_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.tourists .container .tourists-card .tourists-main_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+.tourists .container .tourists-card .tourists-main_text .icon {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 20px;
+  height: 20px;
+  fill: #5373FD;
+}
+
+.footer {
+  background: #000;
+}
+.footer .container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .footer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer .container .footer-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer .container .footer-icons {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.footer .container .footer-icons_item .icon {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}
+.footer .container .footer-icons_item .icon:hover {
+  fill: #5373FD;
+}
+.footer .container .footer-icons_item:not(:last-child) {
+  margin-right: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

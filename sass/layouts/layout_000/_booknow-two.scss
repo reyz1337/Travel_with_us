@@ -1,0 +1,76 @@
+.booknow-two{
+    background: url('../img/booknowSecond.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    .container{
+        .booknow-card{
+            padding: 44px 32px;
+            background: rgba(35, 35, 35, 0.9);
+            color: $white;
+            .city{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1em;
+                font-family: $josefinFont;
+                margin-bottom: 16px;
+            }
+            &_title{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                text-transform: uppercase;
+                font-family: $josefinFont;
+                margin-bottom: 16px;
+            }
+            &_text{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.1em;
+                font-family: $josefinFont;
+                margin-bottom: 28px;
+            }
+            &_button{
+                position: relative;
+                z-index: 1;
+                width: 213px;
+                min-height: 60px;
+                background-color: $accent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 15px;
+                transition: background-color 0.4s;
+                span{
+                    color: $white;
+                    font-family: $aleoFont;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    letter-spacing: 0.07em;
+                    text-transform: uppercase;
+                    z-index: 3;
+                }
+            }
+            &_button::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0;
+                width: 52px;
+                border-bottom: 60px solid #486BFE;
+                border-right: 57px solid transparent;
+                z-index: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.tourists{
+    background: url('../img/touristBg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0 120px 0;
+    .container{
+        .tourists-title{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 40px;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: $aleoFont;
+            color: $white;
+            margin-bottom: 60px;
+        }
+        .tourists-card{
+            background: $dark-grey;
+            img{
+                width: 100%;
+            }
+            .tourists-main{
+                padding: 48px 60px;
+                &_title{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;                
+                    text-transform: uppercase;
+                    font-family: $josefinFont;
+                    color: $white;
+                    margin-bottom: 16px;
+                }
+                &_text{
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.1em;
+                    color: $white;
+                    font-family: $josefinFont;
+                    .icon{
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        width: 20px;
+                        height: 20px;
+                        fill: $accent;
+                    }
+                }
+            }
+        }
+    }
+}
