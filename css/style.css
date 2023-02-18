@@ -746,6 +746,9 @@ a {
   }
 }
 @media only screen and (min-width: 758px) {
+  .header .hero .container .search {
+    min-width: 647px;
+  }
   .navigation .container {
     display: flex;
     flex-direction: column;
