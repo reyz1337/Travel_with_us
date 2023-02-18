@@ -1,2 +1,5 @@
 @import "base/index.scss";
 @import "layouts/layout_000/index.scss";
+@media only screen and (min-width: 576px) {
+    @import "layouts/layout_576/index";
+  }

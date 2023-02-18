@@ -100,6 +100,7 @@ table {
   border: 3px solid #fff;
   width: 100%;
   color: #999999;
+  outline: none;
 }
 .header .hero .container .search .search-button {
   display: flex;
@@ -159,7 +160,7 @@ table {
 .navigation .container {
   min-height: 84px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .navigation .container .nav-logo {
@@ -173,6 +174,10 @@ table {
   color: #fff;
   position: relative;
   z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
 }
 
 .menu-button {
@@ -380,6 +385,9 @@ a {
   text-transform: uppercase;
   z-index: 3;
 }
+.why .container .description .why-button:hover {
+  background-color: #486BFE;
+}
 .why .container .description .why-button::after {
   content: "";
   display: block;
@@ -499,6 +507,9 @@ a {
   text-transform: uppercase;
   z-index: 3;
 }
+.booknow-one .container .booknow-card_button:hover {
+  background-color: #486BFE;
+}
 .booknow-one .container .booknow-card_button::after {
   content: "";
   display: block;
@@ -573,6 +584,9 @@ a {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   z-index: 3;
+}
+.booknow-two .container .booknow-card_button:hover {
+  background-color: #486BFE;
 }
 .booknow-two .container .booknow-card_button::after {
   content: "";
@@ -685,6 +699,50 @@ a {
 }
 .footer .container .footer-icons_item:not(:last-child) {
   margin-right: 32px;
+}
+
+@media only screen and (min-width: 576px) {
+  .header .hero .container .search {
+    margin-bottom: 211px;
+  }
+  .header .hero .container .search .search-button {
+    padding: 16px 24px;
+  }
+  .header .hero .container .search .search-button .icon {
+    width: 54px;
+    height: 16px;
+    margin-right: 12px;
+  }
+  .header .hero .container .search .search-button .button-text {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: "Aleo", serif;
+  }
+  .navigation .container {
+    justify-content: flex-end;
+  }
+  .navigation .container .nav-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .container {
+    padding: 0 18px;
+  }
+  .why .container .images {
+    flex-direction: row;
+    margin-bottom: 37px;
+    justify-content: space-between;
+  }
+  .why .container .images img:first-of-type {
+    margin: 0 24px 0 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

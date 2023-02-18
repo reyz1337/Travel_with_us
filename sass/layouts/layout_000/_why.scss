@@ -73,6 +73,9 @@
                     z-index: 3;
                 }
             }
+            .why-button:hover{
+                background-color: #486BFE;
+            }
             .why-button::after{
                 content: "";
                 display: block;

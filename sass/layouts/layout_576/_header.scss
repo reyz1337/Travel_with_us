@@ -1,0 +1,38 @@
+.header{
+    .hero{
+        .container{
+            .search {
+                margin-bottom: 211px;
+                .search-button{
+                    padding: 16px 24px;
+                    .icon{
+                        width: 54px;
+                        height: 16px;
+                        margin-right: 12px;
+                    }
+                    .button-text {
+                        display: block;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        font-family: $aleoFont;
+                    }
+                }
+            }
+        }
+    }
+}
+.navigation {
+    .container {
+        justify-content: flex-end;
+        .nav-logo{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+        }
+    }
+}

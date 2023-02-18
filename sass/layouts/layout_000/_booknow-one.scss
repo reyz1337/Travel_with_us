@@ -59,6 +59,9 @@
                     z-index: 3;
                 }
             }
+            &_button:hover{
+                background-color: #486BFE;
+            }
             &_button::after{
                 content: "";
                 display: block;
