@@ -1,0 +1,16 @@
+.why{
+    .container{
+        .images{
+            flex-direction: row;
+            margin-bottom: 32px;
+            justify-content: space-between;
+            img{
+                width: 348px;
+                height: 219px;
+            }
+            img:first-of-type{
+                margin: 0 24px 0 0;
+            }
+        }
+    }
+}

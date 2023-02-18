@@ -60,6 +60,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .header .hero .container .hero-title {
   font-weight: 700;
@@ -739,6 +740,55 @@ a {
     flex-direction: row;
     margin-bottom: 37px;
     justify-content: space-between;
+  }
+  .why .container .images img:first-of-type {
+    margin: 0 24px 0 0;
+  }
+}
+@media only screen and (min-width: 758px) {
+  .navigation .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 136px;
+    padding: 35px 0;
+  }
+  .navigation .container .nav-logo {
+    position: static;
+    transform: none;
+    margin-bottom: 30px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu {
+    left: 0;
+    min-height: 0;
+    position: relative;
+    min-height: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu .main-menu {
+    flex-direction: row;
+  }
+  .menu .main-menu_item:not(:last-child) {
+    margin: 0 40px 0 0;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .why .container .images {
+    flex-direction: row;
+    margin-bottom: 32px;
+    justify-content: space-between;
+  }
+  .why .container .images img {
+    width: 348px;
+    height: 219px;
   }
   .why .container .images img:first-of-type {
     margin: 0 24px 0 0;
