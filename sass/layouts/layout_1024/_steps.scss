@@ -1,0 +1,40 @@
+.steps{
+    background-color: $dark-grey;
+    .container{
+        padding: 87px 0 45px 0;
+        background-image: url("../img/line-min.svg");
+        background-repeat: no-repeat;
+        background-position: 51% 37%;
+        min-height: 306px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .steps-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 880px;
+            &_item{
+                .icon{
+                    background-color: $dark-grey;
+                }
+                .search{
+                    height: 71px;
+                    padding-top: 7px;
+                }
+                .circle{
+                    padding-top: 13px;
+                    height: 77px;
+                }
+                .thumbs{
+                    height: 70px;
+                    padding-top: 6px;
+                }
+            }
+           &_item:not(:last-child){
+            margin: 0 120px 0 0;
+           }
+        }
+    }
+}

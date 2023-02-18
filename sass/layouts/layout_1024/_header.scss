@@ -1,0 +1,16 @@
+.navigation {
+    .container {
+        min-height: 84px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        padding: 0 32px 0;
+        .nav-logo{
+            margin: 0;
+        }
+    }
+}
+.menu{
+    justify-content: flex-end;
+}

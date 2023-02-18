@@ -402,9 +402,11 @@ a {
   z-index: 2;
 }
 
+.steps {
+  background-color: #333333;
+}
 .steps .container {
   padding: 60px 0;
-  background-color: #333333;
 }
 .steps .container .steps-list {
   display: flex;
@@ -636,7 +638,7 @@ a {
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .tourists .container .tourists-card .tourists-main_text {
   font-style: normal;
@@ -745,7 +747,7 @@ a {
     margin: 0 24px 0 0;
   }
 }
-@media only screen and (min-width: 758px) {
+@media only screen and (min-width: 768px) {
   .header .hero .container .search {
     min-width: 647px;
   }
@@ -795,6 +797,132 @@ a {
   }
   .why .container .images img:first-of-type {
     margin: 0 24px 0 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navigation .container {
+    min-height: 84px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 32px 0;
+  }
+  .navigation .container .nav-logo {
+    margin: 0;
+  }
+  .menu {
+    justify-content: flex-end;
+  }
+  .container {
+    padding: 0 32px;
+  }
+  .why {
+    padding: 124px 0;
+  }
+  .why .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .why .container .images {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .why .container .images img {
+    width: 350px;
+    height: 220px;
+  }
+  .why .container .images img:first-of-type {
+    margin: 0 36px 16px 0;
+  }
+  .why .container .images img:last-of-type {
+    margin: 0 0 0 36px;
+  }
+  .why .container .description {
+    margin-right: 24px;
+  }
+  .why .container .description .why-title {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .why .container .description .why-text {
+    text-align: left;
+  }
+  .why .container .description .why-text:last-of-type {
+    margin-bottom: 32px;
+  }
+  .why .container .description .why-button {
+    margin: 0;
+  }
+  .steps {
+    background-color: #333333;
+  }
+  .steps .container {
+    padding: 87px 0 45px 0;
+    background-image: url("../img/line-min.svg");
+    background-repeat: no-repeat;
+    background-position: 51% 37%;
+    min-height: 306px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .steps .container .steps-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 880px;
+  }
+  .steps .container .steps-list_item .icon {
+    background-color: #333333;
+  }
+  .steps .container .steps-list_item .search {
+    height: 71px;
+    padding-top: 7px;
+  }
+  .steps .container .steps-list_item .circle {
+    padding-top: 13px;
+    height: 77px;
+  }
+  .steps .container .steps-list_item .thumbs {
+    height: 70px;
+    padding-top: 6px;
+  }
+  .steps .container .steps-list_item:not(:last-child) {
+    margin: 0 120px 0 0;
+  }
+  .booknow-one {
+    padding: 220px 0 120px;
+  }
+  .booknow-one .container {
+    max-width: 550px;
+    margin: 0;
+  }
+  .booknow-two {
+    padding: 220px 0 120px;
+  }
+  .booknow-two .container {
+    max-width: 550px;
+    margin-right: 0;
+  }
+  .tourists {
+    padding: 120px 0 180px 0;
+  }
+  .tourists .container .tourists-card {
+    background: #333333;
+    display: flex;
+  }
+  .tourists .container .tourists-card img {
+    width: 320px;
+    height: 336px;
+    object-fit: cover;
+  }
+  .tourists .container .tourists-card .tourists-main {
+    padding: 48px 60px;
   }
 }
 

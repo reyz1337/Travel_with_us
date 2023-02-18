@@ -1,0 +1,40 @@
+.why{
+    padding: 124px 0;
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        .images{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 350px;
+                height: 220px;
+            }
+            img:first-of-type{
+                margin: 0 36px 16px 0;
+            }
+            img:last-of-type{
+                margin: 0 0 0 36px;
+            }
+        }
+        .description{
+            margin-right: 24px;
+            .why-title{
+                text-align: left;
+                margin-bottom: 24px;
+            }
+            .why-text{
+                text-align: left;
+            }
+            .why-text:last-of-type{
+                margin-bottom: 32px;
+            }
+            .why-button{
+                margin: 0;
+            }
+        }
+    }
+}

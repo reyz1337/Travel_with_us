@@ -1,0 +1,17 @@
+.tourists{
+    padding: 120px 0 180px 0;
+    .container{
+        .tourists-card{
+            background: $dark-grey;
+            display: flex;
+            img{
+                width: 320px;
+                height: 336px;
+                object-fit: cover;
+            }
+            .tourists-main{
+                padding: 48px 60px;
+            }
+        }
+    }
+}
