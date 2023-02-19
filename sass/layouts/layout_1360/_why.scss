@@ -1,0 +1,16 @@
+.why{
+    .container{
+        .images{
+            img:first-of-type{
+                margin: 0 110px 16px 0;
+            }
+            img:last-of-type{
+                margin: 0 0 0 110px;
+            }
+        }
+        .description{
+            margin-right: 121px;
+            max-width: 558px;
+        }
+    }
+}

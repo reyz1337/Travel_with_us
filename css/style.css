@@ -251,6 +251,21 @@ table {
   text-transform: uppercase;
   font-family: "Aleo", serif;
   color: #fff;
+  position: relative;
+}
+.menu .main-menu_item-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.menu .main-menu_item-link:hover::before {
+  width: 100%;
+  left: 0;
 }
 
 @keyframes bounce {
@@ -286,7 +301,7 @@ table {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1360px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -895,19 +910,19 @@ a {
   .steps .container .steps-list_item:not(:last-child) {
     margin: 0 120px 0 0;
   }
-  .booknow-one {
-    padding: 220px 0 120px;
-  }
   .booknow-one .container {
-    max-width: 550px;
-    margin: 0;
+    display: flex;
+    justify-content: flex-start;
   }
-  .booknow-two {
-    padding: 220px 0 120px;
+  .booknow-one .container .booknow-card {
+    max-width: 550px;
   }
   .booknow-two .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .booknow-two .container .booknow-card {
     max-width: 550px;
-    margin-right: 0;
   }
   .tourists {
     padding: 120px 0 180px 0;
@@ -923,6 +938,35 @@ a {
   }
   .tourists .container .tourists-card .tourists-main {
     padding: 48px 60px;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .navigation .container {
+    padding: 0 110px;
+  }
+  .container {
+    padding: 0 110px;
+  }
+  .why .container .images img:first-of-type {
+    margin: 0 110px 16px 0;
+  }
+  .why .container .images img:last-of-type {
+    margin: 0 0 0 110px;
+  }
+  .why .container .description {
+    margin-right: 121px;
+    max-width: 558px;
+  }
+  .booknow-one .container .booknow-card {
+    max-width: 558px;
+  }
+  .booknow-two .container .booknow-card {
+    max-width: 558px;
+  }
+  .tourists .container .tourists-card img {
+    width: 380px;
+    height: 308px;
+    object-fit: cover;
   }
 }
 

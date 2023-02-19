@@ -1,7 +1,9 @@
 .booknow-one{
-    padding: 220px 0 120px;
     .container{
-        max-width: 550px;
-        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        .booknow-card{
+            max-width: 550px;
+        }
     }
 }

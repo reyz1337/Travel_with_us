@@ -198,8 +198,22 @@
                     text-transform: uppercase;
                     font-family: $aleoFont;
                     color: $white;
+                    position: relative;
                 }
-                
+                &_item-link::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 0%;
+                    height: 2px;
+                    background-color: #fff;
+                    transition: all 0.3s;
+                }
+                &_item-link:hover::before{
+                    width: 100%;
+                    left: 0;
+                }
             }
         }
     @keyframes bounce {
